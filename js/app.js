@@ -1,4 +1,5 @@
-
+// balance
+let balance = 0;
 
 // calculateBtn
 const calculateBtn = () => {
@@ -23,7 +24,7 @@ const calculateBtn = () => {
   let totalCost = homeCostValue + marketCostValue + otherCostValue;
 
   // balance
-  let balance = incomeValue - totalCost;
+  balance = incomeValue - totalCost;
 
   if(incomeValue > totalCost){
 
@@ -33,9 +34,7 @@ const calculateBtn = () => {
 
     // total Balance
     const totalBalance = document.getElementById('totalBalance');
-    totalBalance.innerText = 
-    
-    console.log(totalCost, balance)
+    totalBalance.innerText = balance;
 
   }else{
     alert('your balance is low')
@@ -51,5 +50,13 @@ const calculateBtn = () => {
 
 // discountBtn
 const discountBtn = () => {
-  console.log('discount')
+
+  
+
+  // income
+  const income = document.getElementById('income');
+  const incomeValue = Number(income.value);
+
+
+
 }
