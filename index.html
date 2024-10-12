@@ -11,8 +11,84 @@
 <body>
 
   <!-- content section start -->
-  <main>
-    <h1>hello world</h1>
+  <main class="h-full sm:h-screen w-full bg-[url('./img/taka.jpeg')] flex justify-center items-center p-5 lg:p-0">
+    <!-- item start -->
+    <div class="container mx-auto bg-white w-full h-10/12 xl:h-96 ">
+      <!-- title start -->
+       <div class="text-center mt-3">
+        <h2 class="text-2xl font-bold">Saving Amount</h2>
+       </div>
+      <!-- title end -->
+       <div class="flex flex-col sm:flex-row justify-between items-center p-5  lg:p-8 gap-3 sm:gap-5 lg:gap-8 xl:gap-10">
+              <!-- left start -->
+      <div class="flex-1">
+        <!-- income start -->
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Income:</span>
+          </label>
+          <input type="email" placeholder="enter your income" class="input input-bordered w-full" required />
+        </div>
+        <!-- income end -->
+        <!-- const start -->
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Cost:</span>
+          </label>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-3">
+            <li><input type="email" placeholder="home cost" class="input input-bordered w-full" required /></li>
+            <li><input type="email" placeholder="market cost" class="input input-bordered w-full" required /></li>
+            <li><input type="email" placeholder="other cost" class="input input-bordered w-full" required /></li>
+          </ul>
+        </div>
+        <!-- const end -->
+        <!-- btn start -->
+        <div class="form-control mt-6">
+          <button class="btn btn-primary">Calculate</button>
+        </div>
+        <!-- btn end -->
+        <!-- price start -->
+        <ul class="flex flex-col md:flex-row justify-between mt-3">
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Total Expense : <span>00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Balance : <span>00</span></li>
+        </ul>
+        <!-- price end -->
+      </div>
+      <!-- left end -->
+      <!-- right start -->
+      <div class="flex-1">
+        <!-- income start -->
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Bonus:</span>
+          </label>
+          <input type="email" placeholder="enter your income" class="input input-bordered w-full" required />
+        </div>
+        <!-- income end -->
+        <!-- income start -->
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Discount:</span>
+          </label>
+          <input type="email" placeholder="enter your income" class="input input-bordered w-full" required />
+        </div>
+        <!-- income end -->
+        <!-- btn start -->
+        <div class="form-control mt-6">
+          <button class="btn btn-primary">Discount</button>
+        </div>
+        <!-- btn end -->
+        <!-- price start -->
+        <ul class="flex flex-col md:flex-row justify-between mt-3">
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Total Expense : <span>00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Balance : <span>00</span></li>
+        </ul>
+        <!-- price end -->
+      </div>
+      <!-- right end -->
+       </div>
+    </div>
+    <!-- item end -->
   </main>
   <!-- content section end -->
 
