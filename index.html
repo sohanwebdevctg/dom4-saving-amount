@@ -11,7 +11,7 @@
 <body>
 
   <!-- content section start -->
-  <main class="h-full sm:h-screen w-full bg-[url('./img/taka.jpeg')] flex justify-center items-center p-5 lg:p-0">
+  <main class="h-full sm:h-screen w-full bg-[url('./img/taka.jpeg')] flex justify-center items-center p-5 lg:p-8">
     <!-- item start -->
     <div class="container mx-auto bg-white w-full h-10/12 xl:h-96 ">
       <!-- title start -->
@@ -27,7 +27,7 @@
           <label class="label">
             <span class="label-text font-bold">Income:</span>
           </label>
-          <input type="email" placeholder="enter your income" class="input input-bordered w-full" required />
+          <input type="text" id="income" placeholder="enter your income" class="input input-bordered w-full" required />
         </div>
         <!-- income end -->
         <!-- const start -->
@@ -36,21 +36,21 @@
             <span class="label-text font-bold">Cost:</span>
           </label>
           <ul class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-3">
-            <li><input type="email" placeholder="home cost" class="input input-bordered w-full" required /></li>
-            <li><input type="email" placeholder="market cost" class="input input-bordered w-full" required /></li>
-            <li><input type="email" placeholder="other cost" class="input input-bordered w-full" required /></li>
+            <li><input id="homeCost" type="text" placeholder="home cost" class="input input-bordered w-full" required /></li>
+            <li><input id="marketCost" type="text" placeholder="market cost" class="input input-bordered w-full" required /></li>
+            <li><input id="otherCost" type="text" placeholder="other cost" class="input input-bordered w-full" required /></li>
           </ul>
         </div>
         <!-- const end -->
         <!-- btn start -->
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Calculate</button>
+          <button onclick="calculateBtn()" class="btn btn-primary">Calculate</button>
         </div>
         <!-- btn end -->
         <!-- price start -->
         <ul class="flex flex-col md:flex-row justify-between mt-3">
-          <li class="text-sm lg:text-lg xl:text-xl font-bold">Total Expense : <span>00</span></li>
-          <li class="text-sm lg:text-lg xl:text-xl font-bold">Balance : <span>00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Total Expense : <span id="totalExpense">00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Balance : <span id="totalBalance">00</span></li>
         </ul>
         <!-- price end -->
       </div>
@@ -75,13 +75,13 @@
         <!-- income end -->
         <!-- btn start -->
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Discount</button>
+          <button onclick="discountBtn()" class="btn btn-primary">Discount</button>
         </div>
         <!-- btn end -->
         <!-- price start -->
         <ul class="flex flex-col md:flex-row justify-between mt-3">
-          <li class="text-sm lg:text-lg xl:text-xl font-bold">Total Expense : <span>00</span></li>
-          <li class="text-sm lg:text-lg xl:text-xl font-bold">Balance : <span>00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Saving Amount : <span>00</span></li>
+          <li class="text-sm lg:text-lg xl:text-xl font-bold">Remaining Balance : <span>00</span></li>
         </ul>
         <!-- price end -->
       </div>
