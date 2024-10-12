@@ -37,16 +37,9 @@ const calculateBtn = () => {
     const totalBalance = document.getElementById('totalBalance');
     totalBalance.innerText = balance;
 
-    income.value = "";
-    homeCost.value = "";
-    marketCost.value = "";
-    otherCost.value = "";
-
     }else{
       alert('your amount is low')
     }
-
-    
 
   }else{
     alert('please put your cost amount')
